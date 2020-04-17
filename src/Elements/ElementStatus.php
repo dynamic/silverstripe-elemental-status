@@ -96,6 +96,6 @@ class ElementStatus extends BaseElement
      */
     public function getType()
     {
-        return _t(__CLASS__.'.BlockType', 'Status');
+        return _t(__CLASS__ . '.BlockType', 'Status');
     }
 }
