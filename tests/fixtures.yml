@@ -1,0 +1,7 @@
+Dynamic\Elements\Status\Elements\ElementStatus:
+  one:
+    Title: 'Element Status one'
+
+Dynamic\Elements\Status\Model\Status:
+  one:
+    Title: 'Status one'
