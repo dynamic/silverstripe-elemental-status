@@ -63,7 +63,7 @@ class ElementStatus extends BaseElement
     /**
      * @return mixed
      */
-    public function getPromoList()
+    public function getStatusesList()
     {
         return $this->Statuses()->sort('SortOrder');
     }
