@@ -17,6 +17,7 @@ class Status extends DataObject
      */
     private static $db = [
         'Title' => 'Varchar(255)',
+        'Status' => 'Enum("Online,Degraded,Offline")',
         'Content' => 'Text',
     ];
 
@@ -25,6 +26,15 @@ class Status extends DataObject
      */
     private static $has_one = [
         'ElementStatus' => ElementStatus::class,
+    ];
+
+    /**
+     * @var string[]
+     */
+    private static $summary_fields = [
+        'Title',
+        'Status',
+        'Content.Summary' => 'Content',
     ];
 
     /**
